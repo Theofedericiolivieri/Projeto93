@@ -38,3 +38,9 @@ function redirectToRoomName(name)
  localStorage.setItem("roomName", name);
  window.location="kwitter_page.html";
 }
+function logout(){
+  localStorage.removeItem("user_name");
+  localStorage.removeItem("roomName");
+  window.location= "index.html";
+}
+
